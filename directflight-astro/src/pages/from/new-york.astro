@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SkyscannerWidget from '../../components/SkyscannerWidget.astro';
+---
+<BaseLayout
+  title="Nonstop Flights from New York | Direct Routes from JFK, EWR & LGA"
+  description="Complete guide to nonstop flights from New York. See all direct routes from JFK, Newark, and LaGuardia — airlines, flight times, and booking tips."
+>
+<div class="breadcrumb"><div class="container"><a href="/">Home</a><span>/</span><span>Nonstop Flights from New York</span></div></div>
+<section class="page-header">
+  <div class="container">
+    <div class="eyebrow">🗽 New York, United States</div>
+    <h1>Nonstop Flights from New York</h1>
+    <p>New York is served by three major airports — JFK, Newark (EWR), and LaGuardia (LGA) — offering nonstop service to destinations on every continent. Whether you're heading to Europe, Asia, South America, or across the US, New York has a direct route for you.</p>
+    <div class="stat-strip">
+      <div class="stat"><div class="stat-num">150+</div><div class="stat-label">Nonstop destinations</div></div>
+      <div class="stat"><div class="stat-num">3</div><div class="stat-label">Major airports (JFK, EWR, LGA)</div></div>
+      <div class="stat"><div class="stat-num">60+</div><div class="stat-label">Airlines operating</div></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <SkyscannerWidget origin="New York" originCode="NYC" />
+    <h2 class="section-title">Top Nonstop Routes from New York</h2>
+    <div style="overflow-x:auto;margin-bottom:40px">
+      <table class="route-table">
+        <thead><tr><th>Destination</th><th>Airport</th><th>Airlines</th><th>Flight Time</th><th>Frequency</th></tr></thead>
+        <tbody>
+          <tr><td><strong>London</strong></td><td>LHR / LGW</td><td><span class="airline-tag">British Airways</span><span class="airline-tag">Virgin Atlantic</span><span class="airline-tag">American</span><span class="airline-tag">Delta</span></td><td>~7h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Los Angeles</strong></td><td>LAX</td><td><span class="airline-tag">American</span><span class="airline-tag">Delta</span><span class="airline-tag">United</span><span class="airline-tag">JetBlue</span></td><td>~5.5h</td><td><span class="freq-badge">Dozens daily</span></td></tr>
+          <tr><td><strong>Paris</strong></td><td>CDG</td><td><span class="airline-tag">Air France</span><span class="airline-tag">American</span><span class="airline-tag">Delta</span><span class="airline-tag">French Bee</span></td><td>~7.5h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Frankfurt</strong></td><td>FRA</td><td><span class="airline-tag">Lufthansa</span><span class="airline-tag">United</span><span class="airline-tag">Condor</span></td><td>~8h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Dubai</strong></td><td>DXB</td><td><span class="airline-tag">Emirates</span><span class="airline-tag">EtihAD</span></td><td>~12h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Tokyo</strong></td><td>NRT / HND</td><td><span class="airline-tag">Japan Airlines</span><span class="airline-tag">ANA</span><span class="airline-tag">Delta</span></td><td>~14h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Miami</strong></td><td>MIA</td><td><span class="airline-tag">American</span><span class="airline-tag">Delta</span><span class="airline-tag">JetBlue</span><span class="airline-tag">Spirit</span></td><td>~3h</td><td><span class="freq-badge">Dozens daily</span></td></tr>
+          <tr><td><strong>São Paulo</strong></td><td>GRU</td><td><span class="airline-tag">LATAM</span><span class="airline-tag">American</span><span class="airline-tag">United</span></td><td>~10h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Chicago</strong></td><td>ORD / MDW</td><td><span class="airline-tag">American</span><span class="airline-tag">United</span><span class="airline-tag">Delta</span><span class="airline-tag">Southwest</span></td><td>~2.5h</td><td><span class="freq-badge">Dozens daily</span></td></tr>
+          <tr><td><strong>Singapore</strong></td><td>SIN</td><td><span class="airline-tag">Singapore Airlines</span></td><td>~18.5h</td><td><span class="freq-badge">Daily</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prose">
+      <h2>New York's Three Airports Explained</h2>
+      <p><strong>JFK (John F. Kennedy International)</strong> is New York's main international hub and the airport to use for most transatlantic and transpacific nonstop flights. Home to Delta's Terminal 4 superHub and American Airlines' international operations, JFK connects to virtually every major city in Europe, Asia, the Middle East, and beyond.</p>
+      <p><strong>EWR (Newark Liberty International)</strong>, technically in New Jersey but considered a New York airport, is United Airlines' primary East Coast hub. Newark often has cheaper fares than JFK for the same routes and serves many of the same transatlantic destinations. Don't overlook it.</p>
+      <p><strong>LGA (LaGuardia)</strong> handles primarily domestic routes and is not a hub for long-haul international flights. Use it for US and Canadian destinations, not overseas travel.</p>
+      <h2>Tips for Nonstop Flights from New York</h2>
+      <ul>
+        <li><strong>Compare JFK vs EWR.</strong> United's Newark hub often undercuts JFK prices to Europe by $100–300 on the same route.</li>
+        <li><strong>Singapore Airlines' ultra-long-haul.</strong> The JFK–Singapore route (SQ24/SQ25) is one of the longest nonstop flights in the world at 18+ hours — for travelers who want to get to Southeast Asia without any connections, it's unbeatable.</li>
+        <li><strong>Book domestic nonstops early.</strong> New York to Los Angeles, Chicago, and Miami are among the busiest air corridors in the US — fares jump sharply as the flight fills up.</li>
+        <li><strong>Check both JFK and EWR</strong> when searching on Skyscanner — set your departure city to "New York (All airports)" to see results from all three airports at once.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="cta-strip">
+  <h2>Book Your Nonstop Flight from New York</h2>
+  <p>Search all direct routes from JFK, EWR, and LGA on Skyscanner.</p>
+  <a href="https://www.skyscanner.net/transport/flights/NYC/anywhere/?adults=1&currency=USD" target="_blank" rel="noopener sponsored" class="btn-primary">Search New York Flights →</a>
+</section>
+</BaseLayout>

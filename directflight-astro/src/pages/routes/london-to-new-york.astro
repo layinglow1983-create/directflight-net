@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SkyscannerWidget from '../../components/SkyscannerWidget.astro';
+---
+<BaseLayout
+  title="Nonstop Flights London to New York | LHR & LGW to JFK & EWR"
+  description="Complete guide to nonstop flights from London to New York. Airlines, flight times, tips for finding the best direct fare on the world's busiest transatlantic route."
+>
+<div class="breadcrumb"><div class="container"><a href="/">Home</a><span>/</span><a href="/from/london">London</a><span>/</span><span>London to New York</span></div></div>
+<section class="page-header">
+  <div class="container">
+    <div class="eyebrow">✈ Nonstop Route Guide</div>
+    <h1>Nonstop Flights: London to New York</h1>
+    <p>The most iconic transatlantic air route in the world. Multiple airlines compete daily on this corridor, giving travelers a genuine choice of airline, cabin, and price point — all nonstop.</p>
+    <div class="stat-strip">
+      <div class="stat"><div class="stat-num">~7h</div><div class="stat-label">Westbound flight time</div></div>
+      <div class="stat"><div class="stat-num">20+</div><div class="stat-label">Daily departures</div></div>
+      <div class="stat"><div class="stat-num">6+</div><div class="stat-label">Airlines competing</div></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <SkyscannerWidget origin="London" originCode="LHR" destination="New York" destinationCode="JFK" />
+    <div class="prose">
+      <h2>Airlines Flying Nonstop from London to New York</h2>
+      <p>The London–New York corridor is one of the most competitive routes in global aviation. Six or more airlines operate daily nonstop service, creating genuine price competition and a wide range of product options.</p>
+      <ul>
+        <li><strong>British Airways</strong> — Multiple daily departures from LHR to JFK. BA operates both its standard 777/787 fleet and Concorde-successor routes on this corridor. Club World business class is a flagship product.</li>
+        <li><strong>Virgin Atlantic</strong> — Flies from both Heathrow and Gatwick to JFK. Known for a strong Upper Class cabin and competitive economy fares. Often the cheapest full-service option on this route.</li>
+        <li><strong>American Airlines</strong> — Codeshares and operates independently from LHR to JFK, EWR, and LGA. Part of the oneworld alliance with BA.</li>
+        <li><strong>Delta Air Lines</strong> — Operates from LHR and LGW to JFK and other NY-area airports. Delta One business class is a strong product on this route.</li>
+        <li><strong>United Airlines</strong> — Primarily operates London–Newark (EWR), making it the go-to for United MileagePlus members flying this corridor.</li>
+        <li><strong>Norse Atlantic</strong> — Budget long-haul carrier offering nonstop LGW–JFK at significantly lower prices than full-service competitors.</li>
+      </ul>
+      <h2>Flight Time: London to New York</h2>
+      <p>The westbound flight from London to New York takes approximately 7–8 hours. The return eastbound flight is shorter at 6.5–7 hours, thanks to the jet stream working in your favor. Note that the jet stream can vary — actual flight times may differ by up to 30–45 minutes depending on wind conditions on the day of travel.</p>
+      <h2>Which Airports: LHR vs LGW, JFK vs EWR?</h2>
+      <p><strong>From London:</strong> Most nonstop flights depart from Heathrow (LHR), which has more frequency and more airline choice. Gatwick (LGW) is primarily served by Virgin Atlantic and Norse Atlantic — and Gatwick fares are sometimes cheaper. Always check both when searching.</p>
+      <p><strong>Into New York:</strong> JFK is the primary destination, though Newark (EWR) is served by United and sometimes offers cheaper fares. EWR is technically in New Jersey but is a full New York-area airport. LaGuardia (LGA) does not serve transatlantic routes.</p>
+      <div class="tip-box"><p>💡 <strong>Best time to book:</strong> For summer travel (June–August), book 4–6 months in advance. For winter travel outside the holiday period, last-minute fares often drop significantly, especially on Norse Atlantic.</p></div>
+      <h2>Is There a Nonstop Business Class Option?</h2>
+      <p>Yes — all full-service carriers on this route offer business class. British Airways Club World, Virgin Atlantic Upper Class, Delta One, United Polaris, and American Business Class all compete on this route. This is one of the few transatlantic corridors where premium cabin award redemptions using points are reasonably accessible, particularly through partner programs.</p>
+      <h2>Tips for Getting the Best Nonstop Fare</h2>
+      <ul>
+        <li>Set a fare alert on Skyscanner or Google Flights — this route has frequent flash sales, particularly in January–February and October–November.</li>
+        <li>Check Norse Atlantic and Level (where available) for budget nonstop options from Gatwick.</li>
+        <li>Midweek departures (Tuesday, Wednesday) are almost always cheaper than weekend flights.</li>
+        <li>If you have British Airways Avios, the LHR–JFK route can be redeemed for relatively few miles in off-peak periods.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="cta-strip">
+  <h2>Compare Nonstop Fares: London to New York</h2>
+  <p>Search all airlines flying direct on this route and find the best available price.</p>
+  <a href="https://www.skyscanner.net/transport/flights/LHR/JFK/?adults=1&currency=GBP" target="_blank" rel="noopener sponsored" class="btn-primary">Search on Skyscanner →</a>
+</section>
+</BaseLayout>

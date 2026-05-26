@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SkyscannerWidget from '../../components/SkyscannerWidget.astro';
+---
+<BaseLayout
+  title="Nonstop Flights from London | All Direct Routes from LHR & LGW"
+  description="Complete guide to nonstop flights from London Heathrow and Gatwick. See all direct routes, airlines, frequencies, and flight times to destinations worldwide."
+>
+
+<div class="breadcrumb"><div class="container"><a href="/">Home</a><span>/</span><span>Nonstop Flights from London</span></div></div>
+
+<section class="page-header">
+  <div class="container">
+    <div class="eyebrow">🇬🇧 London, United Kingdom</div>
+    <h1>Nonstop Flights from London</h1>
+    <p>London Heathrow (LHR) and Gatwick (LGW) are two of the world's busiest airports, connecting the UK capital to over 200 destinations on every continent. Here's every nonstop route worth knowing.</p>
+    <div class="stat-strip">
+      <div class="stat"><div class="stat-num">200+</div><div class="stat-label">Nonstop destinations</div></div>
+      <div class="stat"><div class="stat-num">2</div><div class="stat-label">Major airports (LHR, LGW)</div></div>
+      <div class="stat"><div class="stat-num">90+</div><div class="stat-label">Airlines operating</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <SkyscannerWidget origin="London" originCode="LHR" />
+
+    <h2 class="section-title">Top Nonstop Routes from London</h2>
+    <p class="section-sub">The most-flown direct routes from LHR and LGW, with airlines and typical flight times.</p>
+
+    <div style="overflow-x:auto;margin-bottom:40px">
+      <table class="route-table">
+        <thead>
+          <tr><th>Destination</th><th>Airport</th><th>Airlines</th><th>Flight Time</th><th>Frequency</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>New York</strong></td><td>JFK / EWR</td><td><span class="airline-tag">British Airways</span><span class="airline-tag">Virgin Atlantic</span><span class="airline-tag">American</span><span class="airline-tag">Delta</span></td><td>~7h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Dubai</strong></td><td>DXB</td><td><span class="airline-tag">Emirates</span><span class="airline-tag">British Airways</span><span class="airline-tag">flydubai</span></td><td>~7h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Los Angeles</strong></td><td>LAX</td><td><span class="airline-tag">British Airways</span><span class="airline-tag">Virgin Atlantic</span><span class="airline-tag">American</span><span class="airline-tag">United</span></td><td>~11h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Singapore</strong></td><td>SIN</td><td><span class="airline-tag">Singapore Airlines</span><span class="airline-tag">British Airways</span></td><td>~13h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Hong Kong</strong></td><td>HKG</td><td><span class="airline-tag">British Airways</span><span class="airline-tag">Cathay Pacific</span><span class="airline-tag">Virgin Atlantic</span></td><td>~12h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Sydney</strong></td><td>SYD</td><td><span class="airline-tag">Qantas</span><span class="airline-tag">British Airways</span></td><td>~22h*</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Toronto</strong></td><td>YYZ</td><td><span class="airline-tag">Air Canada</span><span class="airline-tag">British Airways</span><span class="airline-tag">WestJet</span></td><td>~8h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Tokyo</strong></td><td>HND / NRT</td><td><span class="airline-tag">British Airways</span><span class="airline-tag">Japan Airlines</span><span class="airline-tag">ANA</span></td><td>~12h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Johannesburg</strong></td><td>JNB</td><td><span class="airline-tag">British Airways</span><span class="airline-tag">South African</span><span class="airline-tag">Virgin Atlantic</span></td><td>~11h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Miami</strong></td><td>MIA</td><td><span class="airline-tag">British Airways</span><span class="airline-tag">American</span><span class="airline-tag">Virgin Atlantic</span></td><td>~9h</td><td><span class="freq-badge">Daily</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:13px;color:var(--text-muted);margin-bottom:40px">*Sydney route may include a brief technical stop. Always verify nonstop availability with the airline.</p>
+
+    <div class="prose">
+      <h2>About London's Airports</h2>
+      <p>London is served primarily by two major airports for long-haul and international travel: Heathrow (LHR) in the west of the city, and Gatwick (LGW) to the south. A third airport, Stansted (STN), primarily handles European low-cost carriers.</p>
+      <h3>London Heathrow (LHR)</h3>
+      <p>Heathrow is the UK's largest airport and one of the busiest in the world by international passenger traffic. It is the primary hub for British Airways and a major gateway for dozens of international carriers. If you're flying nonstop long-haul from London, you'll almost certainly be departing from LHR. The airport has four terminals (T2, T3, T4, and T5), with Terminal 5 exclusively serving British Airways.</p>
+      <h3>London Gatwick (LGW)</h3>
+      <p>Gatwick is London's second major airport and the home base for easyJet and several international leisure carriers. Virgin Atlantic operates a number of its transatlantic routes from Gatwick, offering an alternative to Heathrow for North American travelers. Norwegian, TUI, and several charter airlines also fly long-haul from LGW.</p>
+      <h2>Best Airlines for Nonstop Flights from London</h2>
+      <p><strong>British Airways</strong> is the dominant carrier at Heathrow and offers the widest range of nonstop destinations from London — including exclusive nonstop routes to cities served by no other carrier from LHR. Their network spans North America, the Caribbean, Asia, Africa, and Australasia.</p>
+      <p><strong>Virgin Atlantic</strong> focuses on transatlantic routes and competes directly with British Airways on New York, Los Angeles, Miami, and other US destinations. They also fly nonstop to Johannesburg, Lagos, and several Caribbean islands.</p>
+      <p><strong>Emirates</strong> operates multiple daily nonstop flights between Heathrow and Dubai, and is consistently ranked among the best airlines in the world for long-haul comfort.</p>
+      <div class="tip-box"><p>💡 <strong>Pro tip:</strong> Heathrow flights book up fast in summer. If you're flying transatlantic in July or August, book at least 3–4 months ahead for the best nonstop fares.</p></div>
+      <h2>Tips for Flying Nonstop from London</h2>
+      <ul>
+        <li><strong>Check both LHR and LGW.</strong> Some routes are exclusive to one airport. Virgin Atlantic's Gatwick routes are often cheaper than the same airline's Heathrow departures.</li>
+        <li><strong>Use Skyscanner's "nonstop only" filter.</strong> This is the fastest way to eliminate connecting flights and see true direct options.</li>
+        <li><strong>Be flexible on departure airport.</strong> Adding nearby Luton (LTN) or Stansted (STN) to your search can open up cheaper European connections if a nonstop isn't available.</li>
+        <li><strong>Fly midweek.</strong> Tuesday and Wednesday departures from Heathrow are typically the cheapest days for long-haul nonstop fares.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <h2>Ready to Book Your Nonstop Flight from London?</h2>
+  <p>Search and compare all direct routes from LHR and LGW on Skyscanner.</p>
+  <a href="https://www.skyscanner.net/transport/flights/LHR/anywhere/?adults=1&currency=GBP" target="_blank" rel="noopener sponsored" class="btn-primary">Search London Flights →</a>
+</section>
+
+</BaseLayout>

@@ -1,0 +1,30 @@
+---
+interface Props {
+  origin?: string;
+  originCode?: string;
+  destination?: string;
+  destinationCode?: string;
+}
+const { origin = '', originCode = '', destination = '', destinationCode = '' } = Astro.props;
+const searchURL = (originCode && destinationCode)
+  ? `https://www.skyscanner.net/transport/flights/${originCode}/${destinationCode}/?adults=1`
+  : `https://www.skyscanner.net/flights`;
+---
+<div class="sk-widget">
+  <div class="sk-widget-header">
+    <div class="sk-icon">✈</div>
+    <div>
+      <div class="sk-title">Search Nonstop Flights</div>
+      <div class="sk-sub">Compare hundreds of airlines instantly on Skyscanner</div>
+    </div>
+  </div>
+  {(origin && destination) && (
+    <div class="sk-route-info">
+      <span class="sk-city">{origin}</span>
+      <span class="sk-arrow">→</span>
+      <span class="sk-city">{destination}</span>
+    </div>
+  )}
+  <a href={searchURL} target="_blank" rel="noopener sponsored" class="sk-btn">Search flights on Skyscanner →</a>
+  <p class="sk-note">Opens Skyscanner. We may earn a commission on bookings at no extra cost to you.</p>
+</div>

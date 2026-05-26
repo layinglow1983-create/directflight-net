@@ -1,0 +1,93 @@
+---
+import '../styles/global.css';
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  noindex?: boolean;
+}
+const { title, description, canonical, noindex = false } = Astro.props;
+const canonicalURL = canonical || new URL(Astro.url.pathname, Astro.site).toString();
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalURL} />
+  {noindex && <meta name="robots" content="noindex, follow" />}
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalURL} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3682182847176460" crossorigin="anonymous"></script>
+  <link rel="sitemap" href="/sitemap-index.xml" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo">direct<span>flight</span>.net</a>
+      <nav class="site-nav">
+        <a href="/from/london">London</a>
+        <a href="/from/new-york">New York</a>
+        <a href="/from/dubai">Dubai</a>
+        <a href="/from/sydney">Sydney</a>
+        <a href="/guides">Guides</a>
+      </nav>
+      <a href="https://www.skyscanner.net/flights" target="_blank" rel="noopener sponsored" class="nav-cta">Search Nonstop ✈</a>
+    </div>
+  </header>
+  <main><slot /></main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">direct<span>flight</span>.net</div>
+          <p class="footer-desc">Your global guide to nonstop flights. Find direct routes, compare airlines, and skip the layovers — from every major hub on earth.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Top Hubs</h4>
+          <ul>
+            <li><a href="/from/london">From London</a></li>
+            <li><a href="/from/new-york">From New York</a></li>
+            <li><a href="/from/dubai">From Dubai</a></li>
+            <li><a href="/from/sydney">From Sydney</a></li>
+            <li><a href="/from/toronto">From Toronto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="/guides/nonstop-vs-direct-flights">Nonstop vs Direct</a></li>
+            <li><a href="/guides/how-to-find-cheap-nonstop-flights">Find Cheap Nonstops</a></li>
+            <li><a href="/guides/why-nonstop-flights-cost-more">Why Nonstops Cost More</a></li>
+            <li><a href="/guides/best-airlines-long-haul-nonstop">Best Long-Haul Airlines</a></li>
+            <li><a href="/guides/how-to-filter-nonstop-only">Filter Nonstop Only</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
+            <li><a href="/affiliate-disclosure">Affiliate Disclosure</a></li>
+            <li><a href="/cookies-policy">Cookie Policy</a></li>
+            <li><a href="/dmca">DMCA</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© {new Date().getFullYear()} DirectFlight.net — All rights reserved.</p>
+        <p>We may earn a commission when you book through our links, at no extra cost to you. Flight data is informational — always verify with the airline before booking.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

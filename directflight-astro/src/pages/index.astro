@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="DirectFlight.net — Global Nonstop Flight Guide"
+  description="Find nonstop flights from any major airport worldwide. Compare direct routes, airlines, and frequencies. Your global guide to flying without layovers."
+>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="eyebrow"><span class="eyebrow-dot"></span>Global nonstop flight guide</div>
+      <h1>Stop connecting.<br/>Start <span class="hl">arriving.</span></h1>
+      <p>Find every nonstop route from any major airport on earth. Compare airlines, flight times, and fares — all in one place.</p>
+      <div class="stat-row">
+        <div><div class="stat-n">500+</div><div class="stat-l">Routes covered</div></div>
+        <div><div class="stat-n">5</div><div class="stat-l">Global hubs</div></div>
+        <div><div class="stat-n">40+</div><div class="stat-l">Airlines tracked</div></div>
+      </div>
+    </div>
+    <div class="search-card">
+      <h2>Find nonstop flights</h2>
+      <div class="field">
+        <label>Flying from</label>
+        <select id="origin-sel">
+          <option value="london">London (LHR / LGW)</option>
+          <option value="new-york">New York (JFK / EWR)</option>
+          <option value="dubai">Dubai (DXB)</option>
+          <option value="sydney">Sydney (SYD)</option>
+          <option value="toronto">Toronto (YYZ)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Flying to</label>
+        <select><option>Anywhere</option></select>
+      </div>
+      <button class="search-btn" id="search-btn">Search nonstop routes →</button>
+      <p class="search-note">Exploring options? Browse hub pages below for full route lists.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  const sel = document.getElementById('origin-sel') as HTMLSelectElement;
+  const btn = document.getElementById('search-btn') as HTMLButtonElement;
+  btn?.addEventListener('click', () => { window.location.href = `/from/${sel.value}`; });
+</script>
+
+<!-- HUB STRIP -->
+<div class="hub-strip">
+  <div class="hub-strip-inner">
+    <a href="/from/london" class="hs-item"><span class="hs-flag">🇬🇧</span><div><div class="hs-label">London</div><div class="hs-sub">LHR · LGW · 200+ routes</div></div><span class="hs-arrow">→</span></a>
+    <a href="/from/new-york" class="hs-item"><span class="hs-flag">🗽</span><div><div class="hs-label">New York</div><div class="hs-sub">JFK · EWR · 150+ routes</div></div><span class="hs-arrow">→</span></a>
+    <a href="/from/dubai" class="hs-item"><span class="hs-flag">🇦🇪</span><div><div class="hs-label">Dubai</div><div class="hs-sub">DXB · 150+ routes</div></div><span class="hs-arrow">→</span></a>
+    <a href="/from/sydney" class="hs-item"><span class="hs-flag">🇦🇺</span><div><div class="hs-label">Sydney</div><div class="hs-sub">SYD · 50+ intl. routes</div></div><span class="hs-arrow">→</span></a>
+    <a href="/from/toronto" class="hs-item"><span class="hs-flag">🇨🇦</span><div><div class="hs-label">Toronto</div><div class="hs-sub">YYZ · 75+ routes</div></div><span class="hs-arrow">→</span></a>
+  </div>
+</div>
+
+<!-- MAIN CONTENT GRID -->
+<div style="background:white;border-bottom:1px solid var(--rule)">
+  <div class="content-wrap">
+    <div class="main-col">
+      <div class="col-head"><span>Most-searched nonstop routes</span><a href="/routes">View all →</a></div>
+      <a href="/routes/london-to-new-york" class="route-item" style="display:flex">
+        <div style="flex:1"><div class="ri-cities">London <span class="ri-sep">→</span> New York</div><div class="ri-airlines">British Airways · Virgin Atlantic · American · Delta · Norse</div></div>
+        <div class="ri-time">~7h nonstop</div><div class="ri-arr">›</div>
+      </a>
+      <a href="/routes/dubai-to-london" class="route-item" style="display:flex">
+        <div style="flex:1"><div class="ri-cities">Dubai <span class="ri-sep">→</span> London</div><div class="ri-airlines">Emirates · British Airways · flydubai</div></div>
+        <div class="ri-time">~7.5h nonstop</div><div class="ri-arr">›</div>
+      </a>
+      <a href="/routes/new-york-to-los-angeles" class="route-item" style="display:flex">
+        <div style="flex:1"><div class="ri-cities">New York <span class="ri-sep">→</span> Los Angeles</div><div class="ri-airlines">American · Delta · JetBlue · United · Alaska</div></div>
+        <div class="ri-time">~5.5h nonstop</div><div class="ri-arr">›</div>
+      </a>
+      <a href="/routes/sydney-to-singapore" class="route-item" style="display:flex">
+        <div style="flex:1"><div class="ri-cities">Sydney <span class="ri-sep">→</span> Singapore</div><div class="ri-airlines">Qantas · Singapore Airlines · Scoot</div></div>
+        <div class="ri-time">~8h nonstop</div><div class="ri-arr">›</div>
+      </a>
+      <a href="/routes/toronto-to-london" class="route-item" style="display:flex">
+        <div style="flex:1"><div class="ri-cities">Toronto <span class="ri-sep">→</span> London</div><div class="ri-airlines">Air Canada · British Airways · WestJet</div></div>
+        <div class="ri-time">~7h nonstop</div><div class="ri-arr">›</div>
+      </a>
+      <a href="/routes/london-to-dubai" class="route-item" style="display:flex">
+        <div style="flex:1"><div class="ri-cities">London <span class="ri-sep">→</span> Dubai</div><div class="ri-airlines">Emirates · British Airways · flydubai</div></div>
+        <div class="ri-time">~7h nonstop</div><div class="ri-arr">›</div>
+      </a>
+      <a href="/routes/dubai-to-sydney" class="route-item" style="display:flex">
+        <div style="flex:1"><div class="ri-cities">Dubai <span class="ri-sep">→</span> Sydney</div><div class="ri-airlines">Emirates · Qantas</div></div>
+        <div class="ri-time">~14h nonstop</div><div class="ri-arr">›</div>
+      </a>
+      <a href="/routes/london-to-singapore" class="route-item" style="display:flex">
+        <div style="flex:1"><div class="ri-cities">London <span class="ri-sep">→</span> Singapore</div><div class="ri-airlines">Singapore Airlines · British Airways</div></div>
+        <div class="ri-time">~13h nonstop</div><div class="ri-arr">›</div>
+      </a>
+    </div>
+    <div class="side-col">
+      <div class="col-head"><span>Nonstop flight guides</span></div>
+      <a href="/guides/nonstop-vs-direct-flights" class="guide-item" style="display:flex">
+        <div class="guide-num">01</div>
+        <div><div class="guide-title">Nonstop vs Direct: What's the Difference?</div><div class="guide-sub">The most misunderstood terms in aviation, clarified.</div></div>
+      </a>
+      <a href="/guides/how-to-find-cheap-nonstop-flights" class="guide-item" style="display:flex">
+        <div class="guide-num">02</div>
+        <div><div class="guide-title">How to Find Cheap Nonstop Flights</div><div class="guide-sub">Proven strategies — without settling for a connection.</div></div>
+      </a>
+      <a href="/guides/why-nonstop-flights-cost-more" class="guide-item" style="display:flex">
+        <div class="guide-num">03</div>
+        <div><div class="guide-title">Why Do Nonstop Flights Cost More?</div><div class="guide-sub">The economics of nonstop pricing and when direct is cheaper.</div></div>
+      </a>
+      <a href="/guides/best-airlines-long-haul-nonstop" class="guide-item" style="display:flex">
+        <div class="guide-num">04</div>
+        <div><div class="guide-title">Best Airlines for Long-Haul Nonstop</div><div class="guide-sub">Not all 14-hour flights are equal. Here's who does it best.</div></div>
+      </a>
+      <a href="/guides/how-to-filter-nonstop-only" class="guide-item" style="display:flex">
+        <div class="guide-num">05</div>
+        <div><div class="guide-title">How to Filter Nonstop Flights Only</div><div class="guide-sub">Step-by-step on Skyscanner, Google Flights, Kayak, and more.</div></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="about-strip">
+  <div class="about-strip-inner">
+    <div>
+      <h2 class="about-h">Built for travelers who value their time.</h2>
+      <p class="about-p">Connecting flights are sold as a feature. We think they're a compromise. DirectFlight.net exists to make nonstop options easy to find, compare, and book — from any hub, to any destination, at any budget.</p>
+    </div>
+    <div class="value-list">
+      <div class="value-item"><div class="value-icon">⏱</div><div><div class="value-title">Time saved</div><div class="value-desc">Skip 2–5 hour layovers. Arrive hours earlier.</div></div></div>
+      <div class="value-item"><div class="value-icon">🎒</div><div><div class="value-title">Bags protected</div><div class="value-desc">No transfer means dramatically lower loss risk.</div></div></div>
+      <div class="value-item"><div class="value-icon">✅</div><div><div class="value-title">Zero missed connections</div><div class="value-desc">Board once. Land where you meant to land.</div></div></div>
+      <div class="value-item"><div class="value-icon">💤</div><div><div class="value-title">Arrive fresh</div><div class="value-desc">One long rest beats two broken legs every time.</div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-strip">
+  <div class="cta-strip-inner">
+    <div>
+      <div class="cta-h">Ready to skip the layover?</div>
+      <p class="cta-p">Search nonstop flights from your nearest hub — book through Skyscanner in seconds.</p>
+    </div>
+    <a href="https://www.skyscanner.net/flights" target="_blank" rel="noopener sponsored" class="btn-primary">Search on Skyscanner ✈</a>
+  </div>
+</div>
+
+</BaseLayout>

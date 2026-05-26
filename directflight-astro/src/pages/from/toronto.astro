@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SkyscannerWidget from '../../components/SkyscannerWidget.astro';
+---
+<BaseLayout
+  title="Nonstop Flights from Toronto | Direct Routes from YYZ Worldwide"
+  description="Complete guide to nonstop flights from Toronto Pearson International (YYZ). See all direct routes, airlines, and flight times to destinations worldwide."
+>
+<div class="breadcrumb"><div class="container"><a href="/">Home</a><span>/</span><span>Nonstop Flights from Toronto</span></div></div>
+<section class="page-header">
+  <div class="container">
+    <div class="eyebrow">🇨🇦 Toronto, Canada</div>
+    <h1>Nonstop Flights from Toronto</h1>
+    <p>Toronto Pearson International Airport (YYZ) is Canada's largest and busiest airport, and Air Canada's primary hub. Direct flights from Toronto connect North America, Europe, the Caribbean, Asia, and beyond — with over 75 international destinations served nonstop.</p>
+    <div class="stat-strip">
+      <div class="stat"><div class="stat-num">75+</div><div class="stat-label">Nonstop international destinations</div></div>
+      <div class="stat"><div class="stat-num">#1</div><div class="stat-label">Canada's busiest airport</div></div>
+      <div class="stat"><div class="stat-num">60+</div><div class="stat-label">Airlines operating</div></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <SkyscannerWidget origin="Toronto" originCode="YYZ" />
+    <h2 class="section-title">Top Nonstop Routes from Toronto</h2>
+    <div style="overflow-x:auto;margin-bottom:40px">
+      <table class="route-table">
+        <thead><tr><th>Destination</th><th>Airport</th><th>Airlines</th><th>Flight Time</th><th>Frequency</th></tr></thead>
+        <tbody>
+          <tr><td><strong>London</strong></td><td>LHR / LGW</td><td><span class="airline-tag">Air Canada</span><span class="airline-tag">British Airways</span><span class="airline-tag">WestJet</span></td><td>~7h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>New York</strong></td><td>JFK / LGA / EWR</td><td><span class="airline-tag">Air Canada</span><span class="airline-tag">American</span><span class="airline-tag">Porter</span><span class="airline-tag">Delta</span></td><td>~1.5h</td><td><span class="freq-badge">Dozens daily</span></td></tr>
+          <tr><td><strong>Dubai</strong></td><td>DXB</td><td><span class="airline-tag">Emirates</span><span class="airline-tag">Air Canada</span></td><td>~13.5h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Frankfurt</strong></td><td>FRA</td><td><span class="airline-tag">Lufthansa</span><span class="airline-tag">Air Canada</span></td><td>~8h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Tokyo</strong></td><td>NRT</td><td><span class="airline-tag">Air Canada</span><span class="airline-tag">Japan Airlines</span></td><td>~13.5h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Cancún</strong></td><td>CUN</td><td><span class="airline-tag">Air Transat</span><span class="airline-tag">Sunwing</span><span class="airline-tag">Air Canada</span><span class="airline-tag">WestJet</span></td><td>~4.5h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Paris</strong></td><td>CDG</td><td><span class="airline-tag">Air Canada</span><span class="airline-tag">Air France</span><span class="airline-tag">Air Transat</span></td><td>~7.5h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Los Angeles</strong></td><td>LAX</td><td><span class="airline-tag">Air Canada</span><span class="airline-tag">WestJet</span><span class="airline-tag">American</span></td><td>~5h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Delhi</strong></td><td>DEL</td><td><span class="airline-tag">Air Canada</span><span class="airline-tag">Air India</span></td><td>~14h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Punta Cana</strong></td><td>PUJ</td><td><span class="airline-tag">Air Transat</span><span class="airline-tag">Sunwing</span><span class="airline-tag">WestJet</span></td><td>~4h</td><td><span class="freq-badge">Multiple weekly</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prose">
+      <h2>About Toronto Pearson International Airport</h2>
+      <p>Toronto Pearson (YYZ) handles over 50 million passengers annually across its two terminals (T1 and T3). Terminal 1 is home to Air Canada's domestic and international operations, while Terminal 3 serves other domestic carriers, US airlines, and several international routes.</p>
+      <p>Air Canada — one of the largest airlines in North America — uses YYZ as its main hub and operates one of the most extensive nonstop route networks in the country, covering Europe, Asia, the Middle East, the Caribbean, and all major US cities.</p>
+      <div class="tip-box"><p>💡 <strong>Porter Airlines tip:</strong> Porter flies nonstop from Billy Bishop Toronto City Airport (YTZ) — not Pearson — to several US and Canadian destinations. If you're heading to Boston, Chicago, or Newark, check Porter's schedule from the downtown island airport.</p></div>
+      <h2>Tips for Flying Nonstop from Toronto</h2>
+      <ul>
+        <li><strong>Book transatlantic early.</strong> Toronto–London and Toronto–Frankfurt routes book up fast in summer. Aim to book 4–6 months ahead for peak travel.</li>
+        <li><strong>Compare Air Canada vs Air Transat.</strong> For European leisure routes (Paris, Lisbon, Athens), Air Transat often offers significantly cheaper nonstop fares than Air Canada.</li>
+        <li><strong>Use Aeroplan points strategically.</strong> Air Canada's loyalty program has strong partner redemptions — you can use Aeroplan miles to fly nonstop on Star Alliance partners like Lufthansa and ANA.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="cta-strip">
+  <h2>Book Your Nonstop Flight from Toronto</h2>
+  <p>Search direct routes from YYZ on Skyscanner — compare Air Canada, WestJet, and more.</p>
+  <a href="https://www.skyscanner.net/transport/flights/YYZ/anywhere/?adults=1&currency=CAD" target="_blank" rel="noopener sponsored" class="btn-primary">Search Toronto Flights →</a>
+</section>
+</BaseLayout>

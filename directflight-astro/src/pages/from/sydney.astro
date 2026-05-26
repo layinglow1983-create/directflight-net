@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SkyscannerWidget from '../../components/SkyscannerWidget.astro';
+---
+<BaseLayout
+  title="Nonstop Flights from Sydney | Direct Routes from SYD Worldwide"
+  description="Complete guide to nonstop flights from Sydney Airport (SYD). See all direct routes to Asia, the US, UK, and beyond — airlines, flight times, and booking advice."
+>
+<div class="breadcrumb"><div class="container"><a href="/">Home</a><span>/</span><span>Nonstop Flights from Sydney</span></div></div>
+<section class="page-header">
+  <div class="container">
+    <div class="eyebrow">🇦🇺 Sydney, Australia</div>
+    <h1>Nonstop Flights from Sydney</h1>
+    <p>Sydney Kingsford Smith Airport (SYD) is Australia's largest and busiest airport, serving as the primary international gateway for the country. Direct flights from Sydney reach Asia, the Middle East, the US, the UK, New Zealand, and the Pacific Islands.</p>
+    <div class="stat-strip">
+      <div class="stat"><div class="stat-num">50+</div><div class="stat-label">Nonstop international destinations</div></div>
+      <div class="stat"><div class="stat-num">#1</div><div class="stat-label">Australia's busiest airport</div></div>
+      <div class="stat"><div class="stat-num">30+</div><div class="stat-label">International airlines</div></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <SkyscannerWidget origin="Sydney" originCode="SYD" />
+    <h2 class="section-title">Top Nonstop Routes from Sydney</h2>
+    <div style="overflow-x:auto;margin-bottom:40px">
+      <table class="route-table">
+        <thead><tr><th>Destination</th><th>Airport</th><th>Airlines</th><th>Flight Time</th><th>Frequency</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Singapore</strong></td><td>SIN</td><td><span class="airline-tag">Qantas</span><span class="airline-tag">Singapore Airlines</span><span class="airline-tag">Scoot</span></td><td>~8h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Los Angeles</strong></td><td>LAX</td><td><span class="airline-tag">Qantas</span><span class="airline-tag">United</span></td><td>~15h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Dubai</strong></td><td>DXB</td><td><span class="airline-tag">Emirates</span><span class="airline-tag">Qantas</span></td><td>~14h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Tokyo</strong></td><td>NRT / HND</td><td><span class="airline-tag">Qantas</span><span class="airline-tag">Japan Airlines</span><span class="airline-tag">ANA</span></td><td>~9.5h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Auckland</strong></td><td>AKL</td><td><span class="airline-tag">Qantas</span><span class="airline-tag">Air New Zealand</span><span class="airline-tag">Jetstar</span></td><td>~3h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Hong Kong</strong></td><td>HKG</td><td><span class="airline-tag">Cathay Pacific</span><span class="airline-tag">Qantas</span></td><td>~9h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>London</strong></td><td>LHR</td><td><span class="airline-tag">Qantas</span><span class="airline-tag">British Airways</span></td><td>~22h*</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Dallas</strong></td><td>DFW</td><td><span class="airline-tag">Qantas</span><span class="airline-tag">American</span></td><td>~17h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Bangkok</strong></td><td>BKK</td><td><span class="airline-tag">Qantas</span><span class="airline-tag">Thai Airways</span></td><td>~9h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Bali</strong></td><td>DPS</td><td><span class="airline-tag">Qantas</span><span class="airline-tag">Jetstar</span><span class="airline-tag">Virgin Australia</span></td><td>~6h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prose">
+      <h2>Flying Long-Haul from Sydney</h2>
+      <p>Australia's geographic isolation from major population centers means that Sydney travelers are accustomed to long-haul flights. The good news: Qantas and its partners have invested heavily in ultra-long-haul nonstop routes, reducing travel times that previously required connections through Asian hubs.</p>
+      <p>The Sydney–London route, historically one of the longest in the world and always requiring a stop, is now operated nonstop by Qantas under Project Sunrise — a milestone in commercial aviation connecting Australia to the UK in a single flight.</p>
+      <div class="tip-box"><p>💡 <strong>Qantas tip:</strong> The airline's "Fly Faster" business class sale fares to the US and UK are released 12–18 months in advance. Set a fare alert and you can grab premium nonstop fares at a significant discount.</p></div>
+      <h2>Tips for Nonstop Flights from Sydney</h2>
+      <ul>
+        <li><strong>Qantas dominates long-haul.</strong> For nonstop routes beyond Asia, Qantas is usually your only or primary option. Check their website directly for sale fares.</li>
+        <li><strong>Jetstar and Scoot for budget Asia nonstops.</strong> Both low-cost carriers fly nonstop from Sydney to several Southeast Asian destinations at significantly lower prices than full-service carriers.</li>
+        <li><strong>Book the US routes early.</strong> Sydney–LA and Sydney–Dallas are popular and fill up quickly, especially in school holiday periods (January, April, July, September).</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="cta-strip">
+  <h2>Book Your Nonstop Flight from Sydney</h2>
+  <p>Search direct routes from SYD on Skyscanner — compare every airline instantly.</p>
+  <a href="https://www.skyscanner.net/transport/flights/SYD/anywhere/?adults=1&currency=AUD" target="_blank" rel="noopener sponsored" class="btn-primary">Search Sydney Flights →</a>
+</section>
+</BaseLayout>

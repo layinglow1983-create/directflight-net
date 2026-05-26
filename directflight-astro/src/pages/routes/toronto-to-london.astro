@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SkyscannerWidget from '../../components/SkyscannerWidget.astro';
+---
+<BaseLayout title="Nonstop Flights Toronto to London | YYZ to LHR Direct Route Guide" description="Guide to nonstop flights from Toronto to London. Air Canada, British Airways, and WestJet fly nonstop on Canada's premier transatlantic route with daily departures.">
+<div class="breadcrumb"><div class="container"><a href="/">Home</a><span>/</span><span>Nonstop Flights: Toronto to London</span></div></div>
+<section class="page-header">
+  <div class="container">
+    <div class="eyebrow">✈ Nonstop Route Guide</div>
+    <h1>Nonstop Flights: Toronto to London</h1>
+    <p>Canada's busiest transatlantic route connects Pearson International to Heathrow with multiple daily nonstop departures. Three major airlines compete, keeping prices competitive year-round.</p>
+    <div class="stat-strip">
+      <div class="stat"><div class="stat-num">~7h</div><div class="stat-label">Flight time nonstop</div></div>
+      <div class="stat"><div class="stat-num">Multiple daily</div><div class="stat-label">Daily departures</div></div>
+      <div class="stat"><div class="stat-num">3 airlines</div><div class="stat-label">Airlines flying nonstop</div></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <SkyscannerWidget origin="Toronto" originCode="YYZ" destination="London" destinationCode="LHR" />
+    <div class="prose">
+      <h2>Airlines Flying Nonstop from Toronto to London</h2><p><strong>Air Canada</strong> operates multiple daily nonstop flights from YYZ to LHR, including its flagship Signature Class business cabin. As a Star Alliance member, Air Canada's flights are bookable with Aeroplan miles and partner frequent flyer programs.</p><p><strong>British Airways</strong> competes daily on this route with its Club World business class and standard economy product. BA's Avios program allows UK-based travelers to use points on this route.</p><p><strong>WestJet</strong> operates seasonal nonstop service from Toronto to Gatwick (LGW), often at more competitive prices than the Heathrow options. WestJet's Gatwick service is particularly popular for leisure travelers.</p><h2>Flight Time and What to Expect</h2><p>The eastbound flight from Toronto to London takes approximately 7 hours, while the return westbound flight is longer at 8–8.5 hours due to headwinds. Most departures leave Toronto in the evening and arrive in London early the following morning, maximizing your first day in the UK.</p><div class='tip-box'><p>💡 Air Canada's Aeroplan program has strong redemption value on this route. Economy saver awards to London are available from 25,000 points each way — among the better value transatlantic redemptions available to Canadian travelers.</p></div><h2>Tips for Toronto to London Nonstop</h2><ul><li>Check WestJet's Gatwick service — it's often £50–150 cheaper than the Heathrow options for the same travel dates.</li><li>Book summer flights (June–August) at least 4 months ahead. This is the peak period for Canadian transatlantic travel.</li><li>Winter fares (January–March) are significantly cheaper. If timing is flexible, this is the best value window for nonstop Toronto–London travel.</li></ul>
+    </div>
+  </div>
+</section>
+<section class="cta-strip">
+  <h2>Find the Best Fare on This Route</h2>
+  <p>Search and compare every airline flying nonstop between Toronto and London.</p>
+  <a href="https://www.skyscanner.net/transport/flights/YYZ/LHR/?adults=1" target="_blank" rel="noopener sponsored" class="btn-primary">Search on Skyscanner →</a>
+</section>
+</BaseLayout>

@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SkyscannerWidget from '../../components/SkyscannerWidget.astro';
+---
+<BaseLayout title="Nonstop Flights Sydney to Singapore | SYD to SIN Direct Route Guide" description="Guide to nonstop flights from Sydney to Singapore. Qantas, Singapore Airlines, and Scoot fly direct on this key Asia-Pacific route with daily departures.">
+<div class="breadcrumb"><div class="container"><a href="/">Home</a><span>/</span><span>Nonstop Flights: Sydney to Singapore</span></div></div>
+<section class="page-header">
+  <div class="container">
+    <div class="eyebrow">✈ Nonstop Route Guide</div>
+    <h1>Nonstop Flights: Sydney to Singapore</h1>
+    <p>One of the most important Asia-Pacific corridors, connecting Australia's largest city to Southeast Asia's premier aviation hub. Multiple airlines compete with daily nonstop service.</p>
+    <div class="stat-strip">
+      <div class="stat"><div class="stat-num">~8h</div><div class="stat-label">Flight time nonstop</div></div>
+      <div class="stat"><div class="stat-num">Multiple daily</div><div class="stat-label">Daily departures</div></div>
+      <div class="stat"><div class="stat-num">3 airlines</div><div class="stat-label">Airlines flying nonstop</div></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <SkyscannerWidget origin="Sydney" originCode="SYD" destination="Singapore" destinationCode="SIN" />
+    <div class="prose">
+      <h2>Airlines Flying Nonstop from Sydney to Singapore</h2><p><strong>Singapore Airlines</strong> and <strong>Qantas</strong> are the primary full-service carriers on this route, with daily departures and a range of cabin options. <strong>Scoot</strong>, Singapore Airlines' budget subsidiary, offers a lower-cost nonstop alternative for economy travelers.</p><p>Singapore (Changi Airport) is consistently rated the world's best airport and is also a major connecting hub — many travelers flying Sydney–Singapore continue onward to Europe, the Middle East, or other parts of Asia. But for those staying in Singapore or using it as a short layover, the nonstop from Sydney is the fastest option.</p><div class='tip-box'><p>💡 Singapore Airlines' award redemptions from Sydney are excellent value, particularly in Business Class. Check their KrisFlyer program before booking cash fares.</p></div><h2>Tips for Sydney to Singapore Nonstop</h2><ul><li>Scoot offers the lowest base fares but charges separately for bags, meals, and seat selection — factor these in before assuming it's cheaper than Singapore Airlines.</li><li>Singapore Airlines' A380 service on this route offers the airline's famous Suites product in First Class — one of the best in the air anywhere.</li><li>School holidays in Australia see fares spike significantly. Book 6–8 weeks ahead for holiday period travel.</li></ul>
+    </div>
+  </div>
+</section>
+<section class="cta-strip">
+  <h2>Find the Best Fare on This Route</h2>
+  <p>Search and compare every airline flying nonstop between Sydney and Singapore.</p>
+  <a href="https://www.skyscanner.net/transport/flights/SYD/SIN/?adults=1" target="_blank" rel="noopener sponsored" class="btn-primary">Search on Skyscanner →</a>
+</section>
+</BaseLayout>
