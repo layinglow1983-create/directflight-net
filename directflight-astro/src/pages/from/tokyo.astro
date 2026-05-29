@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SkyscannerWidget from '../../components/SkyscannerWidget.astro';
+---
+<BaseLayout
+  title="Nonstop Flights from Tokyo | Direct Routes from HND and NRT Worldwide"
+  description="Complete guide to nonstop flights from Tokyo Haneda and Narita. See all direct routes, airlines, and flight times to destinations worldwide."
+>
+<div class="breadcrumb"><div class="container"><a href="/">Home</a><span>/</span><span>Nonstop Flights from Tokyo</span></div></div>
+<section class="page-header">
+  <div class="page-header-inner">
+    <div class="page-eyebrow">Tokyo, Japan</div>
+    <h1>Nonstop Flights from Tokyo</h1>
+    <p>Tokyo is served by two major international airports — Haneda (HND) near the city centre and Narita (NRT) further east. Together they handle over 120 million passengers annually, making Tokyo one of the world's most connected aviation cities.</p>
+    <div class="stat-strip">
+      <div class="stat"><div class="stat-n">120M+</div><div class="stat-l">Combined passengers/year</div></div>
+      <div class="stat"><div class="stat-n">2</div><div class="stat-l">International airports</div></div>
+      <div class="stat"><div class="stat-n">80+</div><div class="stat-l">Airlines operating</div></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <SkyscannerWidget origin="Tokyo" originCode="TYO" />
+    <h2 class="section-title">Top Nonstop Routes from Tokyo</h2>
+    <div class="table-wrap">
+      <table class="route-table">
+        <thead><tr><th>Destination</th><th>Airport</th><th>Airlines</th><th>Flight Time</th><th>Frequency</th></tr></thead>
+        <tbody>
+          <tr><td><strong>New York</strong></td><td>JFK / EWR</td><td><span class="airline-tag">Japan Airlines</span><span class="airline-tag">ANA</span><span class="airline-tag">Delta</span><span class="airline-tag">United</span></td><td>~14h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Los Angeles</strong></td><td>LAX</td><td><span class="airline-tag">Japan Airlines</span><span class="airline-tag">ANA</span><span class="airline-tag">United</span><span class="airline-tag">American</span></td><td>~11.5h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>London</strong></td><td>LHR</td><td><span class="airline-tag">Japan Airlines</span><span class="airline-tag">ANA</span><span class="airline-tag">British Airways</span></td><td>~12.5h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Singapore</strong></td><td>SIN</td><td><span class="airline-tag">Japan Airlines</span><span class="airline-tag">ANA</span><span class="airline-tag">Singapore Airlines</span></td><td>~7h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Sydney</strong></td><td>SYD</td><td><span class="airline-tag">Japan Airlines</span><span class="airline-tag">ANA</span><span class="airline-tag">Qantas</span></td><td>~9.5h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Frankfurt</strong></td><td>FRA</td><td><span class="airline-tag">Japan Airlines</span><span class="airline-tag">ANA</span><span class="airline-tag">Lufthansa</span></td><td>~12h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Seoul</strong></td><td>ICN</td><td><span class="airline-tag">Japan Airlines</span><span class="airline-tag">ANA</span><span class="airline-tag">Korean Air</span><span class="airline-tag">Asiana</span></td><td>~2.5h</td><td><span class="freq-badge">Dozens daily</span></td></tr>
+          <tr><td><strong>Bangkok</strong></td><td>BKK</td><td><span class="airline-tag">Japan Airlines</span><span class="airline-tag">ANA</span><span class="airline-tag">Thai Airways</span></td><td>~6h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prose">
+      <h2>Haneda vs Narita: Which Airport to Use?</h2>
+      <p>Haneda (HND) is located just 14km from central Tokyo, making it far more convenient for city-centre access. Many major carriers now offer long-haul nonstop from Haneda to New York, London, Paris, and Los Angeles. For any traveler staying in central Tokyo, Haneda is the preferred airport.</p>
+      <p>Narita (NRT) is 60km from central Tokyo and requires a 60-90 minute transfer by Narita Express. Despite the distance, Narita still handles a large share of international routes including many low-cost carrier services across Asia.</p>
+      <div class="tip-box"><p>ANA's Business Class on trans-Pacific routes features its The Room product — private enclosed suites with direct aisle access, considered one of the best Business Class seats flying today.</p></div>
+      <h2>Tips for Nonstop Flights from Tokyo</h2>
+      <ul>
+        <li><strong>Book Golden Week travel early.</strong> Late April and early May are extremely busy in both directions.</li>
+        <li><strong>ANA and JAL are world-class carriers</strong> consistently rated among the top airlines globally for service and product quality.</li>
+        <li><strong>Overnight LAX flights</strong> arrive in Tokyo in the morning, giving you a full first day — a popular itinerary for maximising Japan travel time.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="cta-strip"><div class="cta-strip-inner"><div><div class="cta-h">Search Nonstop Flights from Tokyo</div><p class="cta-p">Compare Japan Airlines, ANA, and every airline from HND and NRT.</p></div><a href="https://www.skyscanner.net/transport/flights/TYO/anywhere/?adults=1&currency=USD" target="_blank" rel="noopener sponsored" class="btn-primary">Search Tokyo Flights</a></div></div>
+</BaseLayout>
