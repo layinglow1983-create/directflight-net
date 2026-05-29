@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SkyscannerWidget from '../../components/SkyscannerWidget.astro';
+---
+<BaseLayout
+  title="Nonstop Flights from Los Angeles | Direct Routes from LAX Worldwide"
+  description="Complete guide to nonstop flights from Los Angeles International (LAX). See all direct routes, airlines, and flight times to destinations worldwide."
+>
+<div class="breadcrumb"><div class="container"><a href="/">Home</a><span>/</span><span>Nonstop Flights from Los Angeles</span></div></div>
+<section class="page-header">
+  <div class="page-header-inner">
+    <div class="page-eyebrow">🇺🇸 Los Angeles, United States</div>
+    <h1>Nonstop Flights from Los Angeles</h1>
+    <p>Los Angeles International Airport (LAX) is the primary gateway for Southern California and one of the busiest airports in the world. Direct flights from LAX span the Pacific, Atlantic, and every major global hub.</p>
+    <div class="stat-strip">
+      <div class="stat"><div class="stat-n">100+</div><div class="stat-l">Nonstop destinations</div></div>
+      <div class="stat"><div class="stat-n">#4</div><div class="stat-l">Busiest US airport</div></div>
+      <div class="stat"><div class="stat-n">70+</div><div class="stat-l">Airlines operating</div></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <SkyscannerWidget origin="Los Angeles" originCode="LAX" />
+    <h2 class="section-title">Top Nonstop Routes from Los Angeles</h2>
+    <div class="table-wrap">
+      <table class="route-table">
+        <thead><tr><th>Destination</th><th>Airport</th><th>Airlines</th><th>Flight Time</th><th>Frequency</th></tr></thead>
+        <tbody>
+          <tr><td><strong>New York</strong></td><td>JFK / EWR</td><td><span class="airline-tag">American</span><span class="airline-tag">Delta</span><span class="airline-tag">United</span><span class="airline-tag">JetBlue</span><span class="airline-tag">Alaska</span></td><td>~5.5h</td><td><span class="freq-badge">Dozens daily</span></td></tr>
+          <tr><td><strong>London</strong></td><td>LHR / LGW</td><td><span class="airline-tag">British Airways</span><span class="airline-tag">Virgin Atlantic</span><span class="airline-tag">American</span><span class="airline-tag">United</span></td><td>~10.5h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Tokyo</strong></td><td>NRT / HND</td><td><span class="airline-tag">Japan Airlines</span><span class="airline-tag">ANA</span><span class="airline-tag">United</span><span class="airline-tag">American</span></td><td>~11.5h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Sydney</strong></td><td>SYD</td><td><span class="airline-tag">Qantas</span><span class="airline-tag">United</span></td><td>~15h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Seoul</strong></td><td>ICN</td><td><span class="airline-tag">Korean Air</span><span class="airline-tag">Asiana</span><span class="airline-tag">Delta</span></td><td>~12h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Dubai</strong></td><td>DXB</td><td><span class="airline-tag">Emirates</span></td><td>~16.5h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Paris</strong></td><td>CDG</td><td><span class="airline-tag">Air France</span><span class="airline-tag">American</span><span class="airline-tag">United</span></td><td>~11h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Singapore</strong></td><td>SIN</td><td><span class="airline-tag">Singapore Airlines</span></td><td>~17.5h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Chicago</strong></td><td>ORD / MDW</td><td><span class="airline-tag">American</span><span class="airline-tag">United</span><span class="airline-tag">Delta</span><span class="airline-tag">Southwest</span></td><td>~4h</td><td><span class="freq-badge">Dozens daily</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prose">
+      <h2>About Los Angeles International Airport (LAX)</h2>
+      <p>LAX serves over 88 million passengers annually and is the primary hub for international travel to and from Southern California. It is home to major airline hubs operated by American Airlines, United Airlines, Delta Air Lines, and Alaska Airlines, as well as a major international gateway for carriers from Asia, Europe, the Middle East, and Latin America.</p>
+      <h2>LAX's Strongest Routes: Trans-Pacific</h2>
+      <p>Los Angeles is arguably the most important trans-Pacific gateway in the United States. Multiple airlines compete on many of these routes, keeping fares competitive. Singapore Airlines nonstop LAX-Singapore service is one of the longest commercial flights in the world at approximately 17.5 hours.</p>
+      <div class="tip-box"><p>Beat the LAX chaos: Budget extra time for ground transportation. The FlyAway bus from Union Station and Uber/Lyft pickup from the LAX-it lot are your best options.</p></div>
+      <h2>Tips for Nonstop Flights from LAX</h2>
+      <ul>
+        <li><strong>Compare nearby airports.</strong> Burbank (BUR), Long Beach (LGB), and John Wayne (SNA) sometimes offer cheaper fares.</li>
+        <li><strong>Book Asia routes 3-5 months ahead.</strong> Trans-Pacific fares fluctuate heavily with demand.</li>
+        <li><strong>Korean Air and Asiana for Seoul connections</strong> offer competitive premium cabin products on the LAX-ICN route.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="cta-strip"><div class="cta-strip-inner"><div><div class="cta-h">Search Nonstop Flights from LA</div><p class="cta-p">Compare every airline flying direct from LAX on Skyscanner.</p></div><a href="https://www.skyscanner.net/transport/flights/LAX/anywhere/?adults=1&currency=USD" target="_blank" rel="noopener sponsored" class="btn-primary">Search LAX Flights</a></div></div>
+</BaseLayout>
+ 
