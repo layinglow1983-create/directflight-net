@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SkyscannerWidget from '../../components/SkyscannerWidget.astro';
+---
+<BaseLayout
+  title="Nonstop Flights from Paris | Direct Routes from CDG and ORY Worldwide"
+  description="Complete guide to nonstop flights from Paris Charles de Gaulle and Orly. See all direct routes, airlines, and flight times to destinations worldwide."
+>
+<div class="breadcrumb"><div class="container"><a href="/">Home</a><span>/</span><span>Nonstop Flights from Paris</span></div></div>
+<section class="page-header">
+  <div class="page-header-inner">
+    <div class="page-eyebrow">Paris, France</div>
+    <h1>Nonstop Flights from Paris</h1>
+    <p>Paris Charles de Gaulle (CDG) is one of Europe's largest airports, serving as Air France's global hub and a major gateway for intercontinental travel. Orly (ORY) handles domestic and some European routes.</p>
+    <div class="stat-strip">
+      <div class="stat"><div class="stat-n">150+</div><div class="stat-l">Nonstop destinations</div></div>
+      <div class="stat"><div class="stat-n">2</div><div class="stat-l">Airports (CDG, ORY)</div></div>
+      <div class="stat"><div class="stat-n">100+</div><div class="stat-l">Airlines operating</div></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <SkyscannerWidget origin="Paris" originCode="CDG" />
+    <h2 class="section-title">Top Nonstop Routes from Paris</h2>
+    <div class="table-wrap">
+      <table class="route-table">
+        <thead><tr><th>Destination</th><th>Airport</th><th>Airlines</th><th>Flight Time</th><th>Frequency</th></tr></thead>
+        <tbody>
+          <tr><td><strong>New York</strong></td><td>JFK / EWR</td><td><span class="airline-tag">Air France</span><span class="airline-tag">Delta</span><span class="airline-tag">French Bee</span></td><td>~8h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Dubai</strong></td><td>DXB</td><td><span class="airline-tag">Air France</span><span class="airline-tag">Emirates</span></td><td>~7h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Montreal</strong></td><td>YUL</td><td><span class="airline-tag">Air France</span><span class="airline-tag">Air Transat</span><span class="airline-tag">Air Canada</span></td><td>~8h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Tokyo</strong></td><td>NRT</td><td><span class="airline-tag">Air France</span><span class="airline-tag">Japan Airlines</span></td><td>~12h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Singapore</strong></td><td>SIN</td><td><span class="airline-tag">Air France</span><span class="airline-tag">Singapore Airlines</span></td><td>~13h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Los Angeles</strong></td><td>LAX</td><td><span class="airline-tag">Air France</span><span class="airline-tag">French Bee</span></td><td>~11h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Chicago</strong></td><td>ORD</td><td><span class="airline-tag">Air France</span><span class="airline-tag">United</span></td><td>~9h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>London</strong></td><td>LHR</td><td><span class="airline-tag">Air France</span><span class="airline-tag">British Airways</span></td><td>~1.5h</td><td><span class="freq-badge">Dozens daily</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prose">
+      <h2>About Paris Charles de Gaulle Airport</h2>
+      <p>CDG is Air France's global hub and one of Europe's premier intercontinental gateways. Located 23km northeast of central Paris, it has three terminal complexes. Most long-haul nonstop flights depart from Terminal 2E and 2G.</p>
+      <p>Orly Airport (ORY) is Paris's second airport, serving domestic French routes, North Africa, and some European destinations. Air France and Transavia both operate from Orly.</p>
+      <div class="tip-box"><p>French Bee offers genuine budget nonstop service from CDG and ORY to New York, Los Angeles, and San Francisco at significantly lower prices than Air France or Delta.</p></div>
+      <h2>Tips for Nonstop Flights from Paris</h2>
+      <ul>
+        <li><strong>Flying Blue Promo Rewards</strong> offers Business Class awards at up to 50% off periodically. Sign up for alerts.</li>
+        <li><strong>CDG terminal navigation.</strong> Allow extra time - transfers between terminals require a shuttle or train.</li>
+        <li><strong>French Bee for budget travel</strong> is often 200-400 euros cheaper than legacy carriers on the same routes.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="cta-strip"><div class="cta-strip-inner"><div><div class="cta-h">Search Nonstop Flights from Paris</div><p class="cta-p">Compare every airline flying direct from CDG and ORY on Skyscanner.</p></div><a href="https://www.skyscanner.net/transport/flights/CDG/anywhere/?adults=1&currency=EUR" target="_blank" rel="noopener sponsored" class="btn-primary">Search Paris Flights</a></div></div>
+</BaseLayout>
