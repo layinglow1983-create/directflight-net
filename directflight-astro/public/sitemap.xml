@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url><loc>https://www.directflight.net/</loc><priority>1.0</priority></url>
+    <url><loc>https://www.directflight.net/from/london</loc><priority>0.9</priority></url>
+    <url><loc>https://www.directflight.net/from/new-york</loc><priority>0.9</priority></url>
+    <url><loc>https://www.directflight.net/from/dubai</loc><priority>0.9</priority></url>
+    <url><loc>https://www.directflight.net/from/sydney</loc><priority>0.9</priority></url>
+    <url><loc>https://www.directflight.net/from/toronto</loc><priority>0.9</priority></url>
+    <url><loc>https://www.directflight.net/routes/london-to-new-york</loc><priority>0.8</priority></url>
+    <url><loc>https://www.directflight.net/routes/dubai-to-london</loc><priority>0.8</priority></url>
+    <url><loc>https://www.directflight.net/routes/new-york-to-los-angeles</loc><priority>0.8</priority></url>
+    <url><loc>https://www.directflight.net/routes/sydney-to-singapore</loc><priority>0.8</priority></url>
+    <url><loc>https://www.directflight.net/routes/toronto-to-london</loc><priority>0.8</priority></url>
+    <url><loc>https://www.directflight.net/routes/london-to-dubai</loc><priority>0.8</priority></url>
+    <url><loc>https://www.directflight.net/routes/new-york-to-miami</loc><priority>0.8</priority></url>
+    <url><loc>https://www.directflight.net/routes/dubai-to-sydney</loc><priority>0.8</priority></url>
+    <url><loc>https://www.directflight.net/routes/toronto-to-new-york</loc><priority>0.8</priority></url>
+    <url><loc>https://www.directflight.net/routes/london-to-singapore</loc><priority>0.8</priority></url>
+    <url><loc>https://www.directflight.net/guides</loc><priority>0.8</priority></url>
+    <url><loc>https://www.directflight.net/guides/nonstop-vs-direct-flights</loc><priority>0.8</priority></url>
+    <url><loc>https://www.directflight.net/guides/how-to-find-cheap-nonstop-flights</loc><priority>0.8</priority></url>
+    <url><loc>https://www.directflight.net/guides/why-nonstop-flights-cost-more</loc><priority>0.8</priority></url>
+    <url><loc>https://www.directflight.net/guides/best-airlines-long-haul-nonstop</loc><priority>0.8</priority></url>
+    <url><loc>https://www.directflight.net/guides/how-to-filter-nonstop-only</loc><priority>0.8</priority></url>
+    <url><loc>https://www.directflight.net/about</loc><priority>0.5</priority></url>
+    <url><loc>https://www.directflight.net/contact</loc><priority>0.5</priority></url>
+    <url><loc>https://www.directflight.net/privacy-policy</loc><priority>0.3</priority></url>
+    <url><loc>https://www.directflight.net/terms</loc><priority>0.3</priority></url>
+    <url><loc>https://www.directflight.net/affiliate-disclosure</loc><priority>0.3</priority></url>
+    <url><loc>https://www.directflight.net/cookies-policy</loc><priority>0.3</priority></url>
+    <url><loc>https://www.directflight.net/dmca</loc><priority>0.3</priority></url>
+</urlset>
