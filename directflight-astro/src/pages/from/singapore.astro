@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SkyscannerWidget from '../../components/SkyscannerWidget.astro';
+---
+<BaseLayout
+  title="Nonstop Flights from Singapore | Direct Routes from Changi (SIN)"
+  description="Complete guide to nonstop flights from Singapore Changi Airport. See all direct routes, airlines, and flight times from the world's best-rated airport."
+>
+<div class="breadcrumb"><div class="container"><a href="/">Home</a><span>/</span><span>Nonstop Flights from Singapore</span></div></div>
+<section class="page-header">
+  <div class="page-header-inner">
+    <div class="page-eyebrow">Singapore</div>
+    <h1>Nonstop Flights from Singapore</h1>
+    <p>Singapore Changi Airport (SIN) is consistently rated the world's best airport. Its location at the crossroads of Southeast Asia makes it one of the most connected aviation hubs on earth, with nonstop service to over 100 countries.</p>
+    <div class="stat-strip">
+      <div class="stat"><div class="stat-n">100+</div><div class="stat-l">Countries served nonstop</div></div>
+      <div class="stat"><div class="stat-n">#1</div><div class="stat-l">Rated world's best airport</div></div>
+      <div class="stat"><div class="stat-n">80+</div><div class="stat-l">Airlines operating</div></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <SkyscannerWidget origin="Singapore" originCode="SIN" />
+    <h2 class="section-title">Top Nonstop Routes from Singapore</h2>
+    <div class="table-wrap">
+      <table class="route-table">
+        <thead><tr><th>Destination</th><th>Airport</th><th>Airlines</th><th>Flight Time</th><th>Frequency</th></tr></thead>
+        <tbody>
+          <tr><td><strong>London</strong></td><td>LHR</td><td><span class="airline-tag">Singapore Airlines</span><span class="airline-tag">British Airways</span></td><td>~13h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Sydney</strong></td><td>SYD</td><td><span class="airline-tag">Singapore Airlines</span><span class="airline-tag">Qantas</span><span class="airline-tag">Scoot</span></td><td>~8h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Tokyo</strong></td><td>NRT / HND</td><td><span class="airline-tag">Singapore Airlines</span><span class="airline-tag">Japan Airlines</span><span class="airline-tag">ANA</span></td><td>~7h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Dubai</strong></td><td>DXB</td><td><span class="airline-tag">Singapore Airlines</span><span class="airline-tag">Emirates</span></td><td>~7h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>New York</strong></td><td>JFK</td><td><span class="airline-tag">Singapore Airlines</span></td><td>~18.5h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Los Angeles</strong></td><td>LAX</td><td><span class="airline-tag">Singapore Airlines</span></td><td>~17.5h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Hong Kong</strong></td><td>HKG</td><td><span class="airline-tag">Singapore Airlines</span><span class="airline-tag">Cathay Pacific</span></td><td>~3.5h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td>singapore.astro<strong>Bangkok</strong></td><td>BKK</td><td><span class="airline-tag">Singapore Airlines</span><span class="airline-tag">Thai Airways</span></td><td>~2.5h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Frankfurt</strong></td><td>FRA</td><td><span class="airline-tag">Singapore Airlines</span><span class="airline-tag">Lufthansa</span></td><td>~13h</td><td><span class="freq-badge">Daily</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prose">
+      <h2>Singapore Changi: The World's Best Airport</h2>
+      <p>Changi Airport has won the Skytrax World's Best Airport award more times than any other airport in history. Its terminals offer an experience unlike any other aviation facility, including indoor waterfalls, butterfly gardens, a rooftop pool, and Jewel Changi, a massive retail complex within a glass dome.</p>
+      <h2>Singapore Airlines: One of the World's Best Carriers</h2>
+      <p>Singapore Airlines is the dominant carrier at Changi and consistently rated one of the world's top airlines. It operates some of the world's longest nonstop flights including Singapore to New York JFK and Singapore to Los Angeles.</p>
+      <div class="tip-box"><p>Singapore Airlines KrisFlyer program has excellent award availability. Consider transferring Amex or Chase points to KrisFlyer for high-value Business Class redemptions.</p></div>
+      <h2>Tips for Nonstop Flights from Singapore</h2>
+      <ul>
+        <li><strong>Scoot for budget regional routes.</strong> Singapore Airlines low-cost subsidiary flies nonstop to dozens of Asian destinations at budget prices.</li>
+        <li><strong>Book ultra-long-haul early.</strong> The Singapore to New York and Singapore to LA routes have limited seating. Book 6-11 months ahead.</li>
+        <li><strong>Changi transit is worth a layover.</strong> Even a 3-4 hour layover is enjoyable at the world's best airport.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="cta-strip"><div class="cta-strip-inner"><div><div class="cta-h">Search Nonstop Flights from Singapore</div><p class="cta-p">Compare every airline flying direct from Changi on Skyscanner.</p></div><a href="https://www.skyscanner.net/transport/flights/SIN/anywhere/?adults=1&currency=USD" target="_blank" rel="noopener sponsored" class="btn-primary">Search Singapore Flights</a></div></div>
+</BaseLayout>
