@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SkyscannerWidget from '../../components/SkyscannerWidget.astro';
+---
+<BaseLayout
+  title="Nonstop Flights from Frankfurt | Direct Routes from FRA Worldwide"
+  description="Complete guide to nonstop flights from Frankfurt Airport. See all direct routes, airlines, and flight times from Lufthansa's global hub."
+>
+<div class="breadcrumb"><div class="container"><a href="/">Home</a><span>/</span><span>Nonstop Flights from Frankfurt</span></div></div>
+<section class="page-header">
+  <div class="page-header-inner">
+    <div class="page-eyebrow">Frankfurt, Germany</div>
+    <h1>Nonstop Flights from Frankfurt</h1>
+    <p>Frankfurt Airport (FRA) is Lufthansa's global hub and Germany's largest airport. Strategically located at the heart of Europe, it offers nonstop service to destinations across six continents — including numerous routes exclusive to Frankfurt among European airports.</p>
+    <div class="stat-strip">
+      <div class="stat"><div class="stat-n">300+</div><div class="stat-l">Destinations served</div></div>
+      <div class="stat"><div class="stat-n">#1</div><div class="stat-l">Germany's largest airport</div></div>
+      <div class="stat"><div class="stat-n">100+</div><div class="stat-l">Airlines operating</div></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <SkyscannerWidget origin="Frankfurt" originCode="FRA" />
+    <h2 class="section-title">Top Nonstop Routes from Frankfurt</h2>
+    <div class="table-wrap">
+      <table class="route-table">
+        <thead><tr><th>Destination</th><th>Airport</th><th>Airlines</th><th>Flight Time</th><th>Frequency</th></tr></thead>
+        <tbody>
+          <tr><td><strong>New York</strong></td><td>JFK / EWR</td><td><span class="airline-tag">Lufthansa</span><span class="airline-tag">United</span><span class="airline-tag">Condor</span></td><td>~9h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Singapore</strong></td><td>SIN</td><td><span class="airline-tag">Lufthansa</span><span class="airline-tag">Singapore Airlines</span></td><td>~13h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Tokyo</strong></td><td>NRT</td><td><span class="airline-tag">Lufthansa</span><span class="airline-tag">ANA</span></td><td>~12h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Chicago</strong></td><td>ORD</td><td><span class="airline-tag">Lufthansa</span><span class="airline-tag">United</span></td><td>~9.5h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Los Angeles</strong></td><td>LAX</td><td><span class="airline-tag">Lufthansa</span><span class="airline-tag">Condor</span></td><td>~11h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Toronto</strong></td><td>YYZ</td><td><span class="airline-tag">Lufthansa</span><span class="airline-tag">Air Canada</span></td><td>~8.5h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Bangkok</strong></td><td>BKK</td><td><span class="airline-tag">Lufthansa</span><span class="airline-tag">Thai Airways</span></td><td>~11h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Dubai</strong></td><td>DXB</td><td><span class="airline-tag">Lufthansa</span><span class="airline-tag">Emirates</span></td><td>~6h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prose">
+      <h2>About Frankfurt Airport</h2>
+      <p>Frankfurt Airport is Germany's largest and Europe's third-busiest airport. It serves as Lufthansa's primary global hub with one of the most extensive intercontinental route networks of any European airport. The airport operates two terminals — Terminal 1 (Lufthansa hub) and Terminal 2 (other carriers).</p>
+      <div class="tip-box"><p>Condor operates nonstop flights from Frankfurt to North America and the Caribbean at significantly lower prices than Lufthansa — worth checking for leisure travel.</p></div>
+      <h2>Tips for Nonstop Flights from Frankfurt</h2>
+      <ul>
+        <li><strong>Condor for budget long-haul.</strong> German leisure carrier Condor flies nonstop from Frankfurt to North America at much lower prices than Lufthansa.</li>
+        <li><strong>Lufthansa's Senator Lounge</strong> at FRA is one of the best airline lounges in Europe.</li>
+        <li><strong>FRA is an excellent connecting hub</strong> with short minimum connection times and an efficient layout.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="cta-strip"><div class="cta-strip-inner"><div><div class="cta-h">Search Nonstop Flights from Frankfurt</div><p class="cta-p">Compare Lufthansa and every airline from FRA on Skyscanner.</p></div><a href="https://www.skyscanner.net/transport/flights/FRA/anywhere/?adults=1&currency=EUR" target="_blank" rel="noopener sponsored" class="btn-primary">Search Frankfurt Flights</a></div></div>
+</BaseLayout>
