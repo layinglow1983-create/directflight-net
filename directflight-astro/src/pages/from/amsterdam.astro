@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SkyscannerWidget from '../../components/SkyscannerWidget.astro';
+---
+<BaseLayout
+  title="Nonstop Flights from Amsterdam | Direct Routes from Schiphol AMS"
+  description="Complete guide to nonstop flights from Amsterdam Schiphol. See all direct routes, airlines, and flight times from one of Europe's most connected hubs."
+>
+<div class="breadcrumb"><div class="container"><a href="/">Home</a><span>/</span><span>Nonstop Flights from Amsterdam</span></div></div>
+<section class="page-header">
+  <div class="page-header-inner">
+    <div class="page-eyebrow">Amsterdam, Netherlands</div>
+    <h1>Nonstop Flights from Amsterdam</h1>
+    <p>Amsterdam Schiphol (AMS) is KLM's home base and one of Europe's top five airports. A single integrated terminal makes Schiphol one of the easiest airports to navigate, with nonstop service spanning six continents.</p>
+    <div class="stat-strip">
+      <div class="stat"><div class="stat-n">170+</div><div class="stat-l">Nonstop destinations</div></div>
+      <div class="stat"><div class="stat-n">1</div><div class="stat-l">Terminal</div></div>
+      <div class="stat"><div class="stat-n">90+</div><div class="stat-l">Airlines</div></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <SkyscannerWidget origin="Amsterdam" originCode="AMS" />
+    <h2 class="section-title">Top Nonstop Routes from Amsterdam</h2>
+    <div class="table-wrap">
+      <table class="route-table">
+        <thead><tr><th>Destination</th><th>Airport</th><th>Airlines</th><th>Flight Time</th><th>Frequency</th></tr></thead>
+        <tbody>
+          <tr><td><strong>New York</strong></td><td>JFK</td><td><span class="airline-tag">KLM</span><span class="airline-tag">Delta</span></td><td>~8.5h</td><td><span class="freq-badge">Multiple daily</span></td></tr>
+          <tr><td><strong>Singapore</strong></td><td>SIN</td><td><span class="airline-tag">KLM</span></td><td>~13h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Tokyo</strong></td><td>NRT</td><td><span class="airline-tag">KLM</span></td><td>~12h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Cape Town</strong></td><td>CPT</td><td><span class="airline-tag">KLM</span></td><td>~11h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Nairobi</strong></td><td>NBO</td><td><span class="airline-tag">KLM</span><span class="airline-tag">Kenya Airways</span></td><td>~9h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Los Angeles</strong></td><td>LAX</td><td><span class="airline-tag">KLM</span><span class="airline-tag">Delta</span></td><td>~11.5h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Dubai</strong></td><td>DXB</td><td><span class="airline-tag">KLM</span><span class="airline-tag">Emirates</span></td><td>~6.5h</td><td><span class="freq-badge">Daily</span></td></tr>
+          <tr><td><strong>Toronto</strong></td><td>YYZ</td><td><span class="airline-tag">KLM</span><span class="airline-tag">Air Canada</span></td><td>~8.5h</td><td><span class="freq-badge">Daily</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prose">
+      <h2>About Amsterdam Schiphol</h2>
+      <p>Schiphol is one of the few major airports in the world to operate as a single integrated terminal, making connections faster and less stressful than multi-terminal airports like Heathrow or CDG. KLM has operated from Schiphol since 1920.</p>
+      <div class="tip-box"><p>KLM and Delta's joint venture means Flying Blue miles can be earned on Delta and redeemed on KLM — and vice versa. This partnership often produces competitive transatlantic fares.</p></div>
+      <h2>Tips for Nonstop Flights from Amsterdam</h2>
+      <ul>
+        <li><strong>Schiphol connections as short as 40 minutes</strong> are possible and regularly make flights thanks to the single-terminal layout.</li>
+        <li><strong>KLM's Africa network</strong> is exceptional — Amsterdam often has more nonstop options to sub-Saharan Africa than any other European hub.</li>
+        <li><strong>Flying Blue Promo Rewards</strong> runs monthly sales with Business Class awards at up to 50% off standard rates.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="cta-strip"><div class="cta-strip-inner"><div><div class="cta-h">Search Nonstop Flights from Amsterdam</div><p class="cta-p">Compare KLM and every airline from Schiphol on Skyscanner.</p></div><a href="https://www.skyscanner.net/transport/flights/AMS/anywhere/?adults=1&currency=EUR" target="_blank" rel="noopener sponsored" class="btn-primary">Search Amsterdam Flights</a></div></div>
+</BaseLayout>
