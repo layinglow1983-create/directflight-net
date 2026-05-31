@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SkyscannerWidget from '../../components/SkyscannerWidget.astro';
+---
+<BaseLayout title="Nonstop Flights London to Toronto | LHR to YYZ Direct" description="Guide to nonstop flights from London to Toronto. Air Canada, British Airways, and WestJet fly direct daily between Heathrow and Pearson International.">
+<div class="breadcrumb"><div class="container"><a href="/">Home</a><span>/</span><span>Nonstop Flights: London to Toronto</span></div></div>
+<section class="page-header">
+  <div class="page-header-inner">
+    <div class="page-eyebrow">Nonstop Route Guide</div>
+    <h1>Nonstop Flights: London to Toronto</h1>
+    <p>One of the premier transatlantic routes connecting the UK to Canada. Multiple airlines offer daily nonstop service from London Heathrow to Toronto Pearson, with flight times around 8.5 hours westbound.</p>
+    <div class="stat-strip">
+      <div class="stat"><div class="stat-n">~8.5h</div><div class="stat-l">Flight time nonstop</div></div>
+      <div class="stat"><div class="stat-n">5+ daily</div><div class="stat-l">Daily departures</div></div>
+      <div class="stat"><div class="stat-n">3 airlines</div><div class="stat-l">Airlines nonstop</div></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <SkyscannerWidget origin="London" originCode="LHR" destination="Toronto" destinationCode="YYZ" />
+    <div class="prose">
+      <h2>Airlines Flying Nonstop from London to Toronto</h2>
+      <p>The London to Toronto corridor is well-served by both legacy and leisure carriers, giving travellers genuine options across economy, premium economy, and business class.</p>
+      <ul>
+        <li><strong>Air Canada</strong> — Multiple daily nonstop flights from LHR to YYZ with Signature Class business cabin and a strong Aeroplan redemption program.</li>
+        <li><strong>British Airways</strong> — Daily nonstop from LHR to YYZ with Club World business class and competitive Avios redemption opportunities.</li>
+        <li><strong>WestJet</strong> — Seasonal and year-round nonstop service from LHR to YYZ offering competitive economy and premium fares.</li>
+      </ul>
+      <h2>Westbound vs Eastbound Flight Times</h2>
+      <p>Flying westbound from London to Toronto takes approximately 8.5 hours due to headwinds from the jet stream. The eastbound return from Toronto to London is typically 7 to 7.5 hours. Overnight westbound departures from Heathrow are common and deliver you to Toronto in the afternoon local time.</p>
+      <div class="tip-box"><p>An evening departure from Heathrow arriving mid-afternoon in Toronto is the most practical routing — you clear customs with energy to spare and get your first Canadian day.</p></div>
+      <h2>Tips for London to Toronto Nonstop</h2>
+      <ul>
+        <li><strong>Air Canada Aeroplan</strong> miles are among the best ways to book business class on this route — watch for partner award availability on British Airways metal as well.</li>
+        <li><strong>Premium Economy</strong> is a strong value proposition on the 8.5-hour westbound leg — significantly more comfortable than economy for a modest upcharge.</li>
+        <li><strong>Book in advance</strong> — this route is heavily used by both business and leisure travellers and fares spike around Canadian holidays and UK school breaks.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="cta-strip"><div class="cta-strip-inner"><div><div class="cta-h">Find the Best Fare: London to Toronto</div><p class="cta-p">Search and compare every airline flying nonstop on this route.</p></div><a href="https://www.skyscanner.net/transport/flights/LHR/YYZ/?adults=1" target="_blank" rel="noopener sponsored" class="btn-primary">Search on Skyscanner</a></div></div>
+</BaseLayout>
